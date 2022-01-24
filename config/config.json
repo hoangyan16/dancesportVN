@@ -1,0 +1,84 @@
+{
+  "development": {
+    "username": "smile_dev",
+    "password": "Dev@2021",
+    "database": "dance_sport_registration",
+    "host": "103.9.159.151",
+    "port": "22206",
+    "dialect": "mysql",
+    "logging": true,
+    "pool": {
+      "max": 100,
+      "min": 0,
+      "acquire": 1000000,
+      "idle": 200000
+    },
+    "dialectOptions": {
+      "dateStrings": true,
+      "typeCast": true,
+      "useUTC": false
+    },
+    "define": {
+      "freezeTableName": true,
+      "charset": "utf8",
+      "dialectOptions": {
+        "collate": "utf8_general_ci"
+      },
+      "timezone": "+07:00"
+    },
+    "comment": {
+      "desc": "You will get the same kind of objects with multiple environments or you can create one based on your requirement",
+      "process": "just duplicate the development object and set the name as environment name, then that will be used if you set the env value with that name",
+      "Note": "some keys, dialect you've to check with the system you use ( /* one of 'mysql' | 'mariadb' | 'postgres' | 'mssql' */ )",
+      "important": "Properly set the env value, before executing anything and check which env is getting use, then you can check that particular env object if any value is mistaken"
+    }
+  },
+  "dev": {
+    "username": "smile_dev",
+    "password": "Dev@2021",
+    "database": "dance_sport_registration",
+    "host": "localhost",
+    "port": "3306",
+    "dialect": "mysql",
+    "logging": true,
+    "pool": {
+      "max": 100,
+      "min": 0,
+      "acquire": 1000000,
+      "idle": 200000
+    },
+    "dialectOptions": {
+      "dateStrings": true,
+      "typeCast": true,
+      "useUTC": false
+    },
+    "define": {
+      "freezeTableName": true,
+      "charset": "utf8",
+      "dialectOptions": {
+        "collate": "utf8_general_ci"
+      },
+      "timezone": "+07:00"
+    },
+    "comment": {
+      "desc": "You will get the same kind of objects with multiple environments or you can create one based on your requirement",
+      "process": "just duplicate the development object and set the name as environment name, then that will be used if you set the env value with that name",
+      "Note": "some keys, dialect you've to check with the system you use ( /* one of 'mysql' | 'mariadb' | 'postgres' | 'mssql' */ )",
+      "important": "Properly set the env value, before executing anything and check which env is getting use, then you can check that particular env object if any value is mistaken"
+    }
+  },
+  "test": {
+    "dialect": "sqlite",
+    "storage": ":memory:",
+    "logging": false
+  },
+  "production": {
+    "username": "smile_dev",
+    "password": "Dev@2021",
+    "database": "dance_sport_registration",
+    "host": "103.9.159.151",
+    "port": "22206",
+    "dialect": "mysql",
+    "logging": true
+  }
+}
